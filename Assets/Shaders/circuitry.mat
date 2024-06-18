@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: circuitry
+  m_Shader: {fileID: 4800000, guid: 085abe4f20c4e6449942ce081ddb97eb, type: 3}
+  m_ValidKeywords:
+  - _DETAIL_MAP
+  - _MASK_MAP
+  - _NORMAL_MAP
+  - _RECEIVE_SHADOWS
+  m_InvalidKeywords:
+  - _SHADOWS_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: fa4a9a68b37dc184aa0b2d90e1bce8a7, type: 3}
+        m_Scale: {x: 2, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMap:
+        m_Texture: {fileID: 2800000, guid: c8c23616d00b8984494011ffca41ab4f, type: 3}
+        m_Scale: {x: 8, y: 4}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 2800000, guid: e748680f2ccc6bd48a9af771f0195ce4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 2800000, guid: 11013667ad61c214288fe1e879e30179, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: fa4a9a68b37dc184aa0b2d90e1bce8a7, type: 3}
+        m_Scale: {x: 2, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskMap:
+        m_Texture: {fileID: 2800000, guid: 861eb73d2ef1b21468314a7134c15827, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 54ec3bb0781065247acaf83ea0e31996, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Clipping: 0
+    - _Cutoff: 0.5
+    - _DetailAlbedo: 0.2
+    - _DetailMapToggle: 1
+    - _DetailNormalScale: 0.5
+    - _DetailSmoothness: 0.2
+    - _DstBlend: 0
+    - _Fresnel: 0.232
+    - _MaskMapToggle: 1
+    - _Metallic: 0.795
+    - _NormalMapToggle: 1
+    - _NormalScale: 1
+    - _Occlusion: 0
+    - _PremulAlpha: 0
+    - _ReceiveShadows: 1
+    - _Shadows: 0
+    - _Smoothness: 0.364
+    - _SrcBlend: 1
+    - _ZWrite: 1
+    m_Colors:
+    - _BaseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 0}
+  m_BuildTextureStacks: []
