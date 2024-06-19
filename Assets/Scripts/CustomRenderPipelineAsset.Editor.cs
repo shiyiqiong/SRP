@@ -9,6 +9,7 @@ partial class CustomRenderPipelineAsset
 	static string[] renderingLayerNames;
 
 	static CustomRenderPipelineAsset () {
+		//初始化渲染层级
 		renderingLayerNames = new string[31];
 		for (int i = 0; i < renderingLayerNames.Length; i++) {
 			renderingLayerNames[i] = "Layer " + (i + 1);
