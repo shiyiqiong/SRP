@@ -197,6 +197,7 @@ public partial class CameraRender
         var sortingSettings = new SortingSettings(camera){
             criteria = SortingCriteria.CommonOpaque
         };
+        //绘制设置：着色器标签、绘制排序、是否启用动态合批、是否启用GPU实例化、是否启用光照烘焙、是否启用光照、遮挡、反射探针、是否启用阴影遮罩、是否启用光照、遮挡探针代理、是否启用每个对象光照模式
         var drawingSettings = new DrawingSettings(
             unlitShaderTagId, sortingSettings
         ){
@@ -205,11 +206,11 @@ public partial class CameraRender
             perObjectData = PerObjectData .ReflectionProbes | PerObjectData.Lightmaps |PerObjectData.ShadowMask | PerObjectData.LightProbe | PerObjectData.OcclusionProbe | PerObjectData.LightProbeProxyVolume |
 				PerObjectData .OcclusionProbeProxyVolume | lightsPerObjectFlags
         };
-
-        //1.绘制不透明几何体
         drawingSettings.SetShaderPassName(1, litShaderTagId);
+        
+        //1.绘制不透明几何体
         var filteringSettings = new FilteringSettings(RenderQueueRange.opaque, renderingLayerMask: (uint) renderingLayerMask); //设置过滤器：只渲染不透明物体和处于对应渲染层
-        context.DrawRenderers(cullingResults, ref drawingSettings, ref filteringSettings); 
+        context.DrawRenderers(cullingResults, ref drawingSettings, ref filteringSettings); //摄像机裁剪结果、绘制设置、过滤器设置
         //2.绘制天空盒
         context.DrawSkybox(camera); 
         //3.复制中间帧缓冲区（深度和颜色中间帧缓冲区，仅在渲染透明对象时可用）
