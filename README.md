@@ -32,10 +32,4 @@
 - 清理阴影贴图图集缓冲区；
 - 清理中间缓冲区（如果使用了中间缓冲区）。
 ***
-渲染阴影贴图
-***
-渲染几何体
-***
-渲染后处理效果
-***
 参考资料：https://catlikecoding.com/unity/tutorials/custom-srp/
